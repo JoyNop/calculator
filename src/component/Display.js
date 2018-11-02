@@ -9,13 +9,12 @@ class Display extends React.Component {
     return (
       <div className="component-display">
 
-      {console.log(this )}
         <div>{this.props.vlaue}</div>
       </div>
     );
   }
 }
 Display.propTypes = {
-  vlaue:  PropTypes.string,
+  vlaue: PropTypes.string,
 };
 export default Display;
