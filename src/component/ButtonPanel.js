@@ -52,7 +52,7 @@ class ButtonPanel extends React.Component {
 }
 
 
-ButtonPanel.PropTypes={
+ButtonPanel.propTypes={
     clickHandler:PropTypes.func,
 };
 

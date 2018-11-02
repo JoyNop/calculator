@@ -6,8 +6,9 @@ import "./Button.css";
 
 class Button extends React.Component {
 
-    handlerClick=()=>{
+    handleClick=()=>{
         this.props.clickHandler(this.props.name);
+ 
     };
   render() {
 
@@ -19,7 +20,9 @@ class Button extends React.Component {
 
     return (
       <div className={className.join(" ").trim()}>
-      <button onClick={this.handlerClick}>{this.props.name}</button>
+      <button onClick={this.handleClick}>{this.props.name}</button>
+
+    
       </div>
     );
   }
@@ -28,6 +31,6 @@ Button.propTypes = {
   name:PropTypes.string,
   orange:PropTypes.bool,
   wide:PropTypes.bool,
-  clickHandler:PropTypes.func,
+  clickHandler: PropTypes.func,
 };
 export default Button;
